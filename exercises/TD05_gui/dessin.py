@@ -15,7 +15,7 @@ def croix():
     x = random.randint(0, 400)
     y = random.randint(0, 400)
     canvas.create_line((x, y), (x+100, y+100), fill= "yellow")
-    canvas.create_line((x, y), (x+100, y+100), fill= "yellow")
+    canvas.create_line((x+100, y), (x, y+100), fill= "yellow")
 
 def choisir_couleur():
     global color
@@ -30,7 +30,7 @@ dessin.title("Mon dessin")
 boutton_cercle = tk.Button(dessin, text="Cercle", padx = "0.5cm", pady = "0.5cm", font = ("", "10"), command = cercle) 
 boutton_carre = tk.Button(dessin, text="Carre", padx = "0.5cm", pady = "0.5cm", command = carre)
 boutton_croix = tk.Button(dessin, text="Croix", padx = "0.5cm", pady = "0.5cm", command = croix)
-boutton_couleur = tk.Button(dessin, text="Choisir une couleur", padx = "0.5cm", pady = "0.5cm", command = choisir_couleur)
+boutton_couleur = tk.Button(dessin, text="Choisir une couleur", padx = "0.5cm", pady = "0.5cm", command =choisir_couleur)
 canvas = tk.Canvas(dessin, width= 500, height = 500, bg = "black", bd = 50, relief = "raised")
 
 boutton_cercle.grid(row=1, column=0)
