@@ -37,9 +37,9 @@ bouton_degrade_2D = tk.Button(racine, text="Dégradé 2D", bg="grey100", fg="blu
 canvas = tk.Canvas(racine, width=256, height=256, bg="black")
 
 # placement des widgets\n",
-bouton_cercle.grid(column=0, row=1)
-bouton_carre.grid(column=0, row=2)
-bouton_croix.grid(column=0, row=3)
+bouton_aleatoire.grid(column=0, row=1)
+bouton_degrade_gris.grid(column=0, row=2)
+bouton_degrade_2D.grid(column=0, row=3)
 canvas.grid(column=1, row=1, rowspan=3)
 
 racine.mainloop()
